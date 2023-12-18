@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     
@@ -50,8 +51,32 @@
     ];
 
 ?>
-<span> <?php echo $hotels ?></span>
-<span> <?php echo $hotels[0]['description'];?></span>
+<?php foreach ($hotels as $hotel){
+    echo '<ul>'.$hotel['name'].'</ul>';}?>
+    <h1><?php echo $hotels[0]['name']; ?></h1>
+    <h1><?php echo $hotels[1]['name']; ?></h1>
+    <h1><?php echo $hotels[2]['name']; ?></h1>
 
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><?php for ($i=0; $i < count($hotels) ; $i++) { 
+       echo $hotels.['name'];
+      } ?></td>
+    
+    </tr>
+    
+  </tbody>
+</table>
 </body>
 </html>
