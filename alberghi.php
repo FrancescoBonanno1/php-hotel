@@ -52,31 +52,10 @@
 
 ?>
 <?php foreach ($hotels as $hotel){
-    echo '<ul>'.$hotel['name'].'</ul>';}?>
-    <h1><?php echo $hotels[0]['name']; ?></h1>
-    <h1><?php echo $hotels[1]['name']; ?></h1>
-    <h1><?php echo $hotels[2]['name']; ?></h1>
-
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td><?php for ($i=0; $i < count($hotels) ; $i++) { 
-       echo $hotels.['name'];
-      } ?></td>
-    
-    </tr>
-    
-  </tbody>
-</table>
+    echo '<ul>'.$hotel['name'].'</ul>';
+    echo '<ul>'. $hotel['description'].'</ul>';
+    echo '<ul>'.$hotel['parking'].'</ul>';
+    echo '<ul>'.$hotel['vote'].'</ul>';
+    echo '<ul>'.$hotel['distance_to_center'].'</ul>';}?>
 </body>
 </html>
